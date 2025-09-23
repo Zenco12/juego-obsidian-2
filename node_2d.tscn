@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmusx0oh5mrew"]
+
+[ext_resource type="PackedScene" uid="uid://dssomw0vp1vag" path="res://player.tscn" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://dpp3y7ewwvwmy" path="res://sprites/Dibujos_Escenarios/floor/bog_green0.png" id="2_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(32.0321, 31.874)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_0e48y")]
+position = Vector2(581, 288)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="BogGreen0" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(592, 487)
+scale = Vector2(31.1875, 7.9375)
+texture = ExtResource("2_epypp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(592.5, 486.5)
+scale = Vector2(31.1875, 7.9375)
+shape = SubResource("RectangleShape2D_0hol4")
