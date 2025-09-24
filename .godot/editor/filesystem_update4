@@ -1,5 +1,7 @@
 res://Level_1.tscn
+res://node_2d.tscn
+res://levels/Level_2.tscn
 res://player.tscn
+res://scripts/enemy.gd
 res://enemy.tscn
 res://prueba.tscn
-res://scripts/enemy.gd
