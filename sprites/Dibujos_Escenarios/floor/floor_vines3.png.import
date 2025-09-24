@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/floor_vines3.png-6627ba7ff7543d274e1e05a3fdb7
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

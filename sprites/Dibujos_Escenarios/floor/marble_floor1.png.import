@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/marble_floor1.png-5a5282a3f82d3a97211584213eb
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

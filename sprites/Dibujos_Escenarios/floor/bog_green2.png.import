@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/bog_green2.png-2f0c1352140a1d2eae6e320b84e724
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

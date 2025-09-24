@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/hive1.png-7dfa5e000549cb3adce772fbb22fe978.ct
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

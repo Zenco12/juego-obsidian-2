@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/crystal_floor4.png-b8a0f1c76eb873d1010769924f
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

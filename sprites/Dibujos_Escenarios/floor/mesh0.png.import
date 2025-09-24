@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/mesh0.png-48bf7379c99c278fb1a5e466026b5463.ct
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

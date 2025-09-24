@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/floor_nerves0.png-9f3040ef21157bd62c4cfe3c21b
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

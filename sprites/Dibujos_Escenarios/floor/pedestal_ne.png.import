@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/pedestal_ne.png-4d23680e889b06d64df97b3c0c3bd
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

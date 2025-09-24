@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/tomb0.png-094f9f2ed1e2b5f420dd5f802a93db99.ct
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

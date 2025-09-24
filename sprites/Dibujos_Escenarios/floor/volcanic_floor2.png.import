@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/volcanic_floor2.png-fa5159a3f0c9d2d0a214fccff
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

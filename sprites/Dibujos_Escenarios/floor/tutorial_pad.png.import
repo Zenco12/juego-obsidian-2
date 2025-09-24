@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/tutorial_pad.png-584c230dc2154b7546e548f32ef3
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

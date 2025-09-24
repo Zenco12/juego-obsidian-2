@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/pebble_brown8.png-088a7b1f4835837c7f9ea6f49b0
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

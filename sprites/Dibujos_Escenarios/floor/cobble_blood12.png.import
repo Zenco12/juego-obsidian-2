@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/cobble_blood12.png-2a17f7ce87189b87c106a0a894
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/sandstone_floor9.png-c7334ee6882c726f92b7e35e
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
