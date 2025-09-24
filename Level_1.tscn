@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cj0hs2byqr8vj" path="res://sprites/Dibujos_Escenarios/floor/pedestal_n.png" id="16_tysot"]
 [ext_resource type="Texture2D" uid="uid://bvepr86oc4gh2" path="res://sprites/Dibujos_Escenarios/floor/pedestal_ne.png" id="17_ojddo"]
 [ext_resource type="PackedScene" uid="uid://dssomw0vp1vag" path="res://player.tscn" id="18_tlish"]
-[ext_resource type="PackedScene" uid="uid://cugi0rdp0gokk" path="res://enemy.tscn" id="19_fkbji"]
+[ext_resource type="PackedScene" path="res://enemy.tscn" id="19_fkbji"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gwx4l"]
 texture = ExtResource("5_8xl1m")
@@ -158,6 +158,8 @@ rendering_quadrant_size = 32
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("18_tlish")]
 position = Vector2(35, 543)
+gravedad = 550
+velocidadSalto = 400
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("19_fkbji")]
 position = Vector2(543, 560)
