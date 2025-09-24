@@ -17,11 +17,16 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 		perseguir = false
 
 func _physics_process(delta: float) -> void:
+	# Aplicar gravedad siempre
 	velocity.y += gravity * delta
 	
 	if perseguir and detecplayer != null:
-		velocity = position.direction_to(detecplayer.position) * speed
-	
+		# Solo modificamos X, dejamos Y igual
+		var dir = position.direction_to(detecplayer.position)
+		velocity.x = dir.x * speed
 	else:
-		velocity = Vector2.ZERO
+		# Cuando no persigue, queda quieto en X
+		velocity.x = 0
+
+	# Mover usando move_and_slide
 	move_and_slide()
