@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://br6mdsm6nsi5a"]
+[gd_scene load_steps=36 format=3 uid="uid://ct73q1qvj3mna"]
 
 [ext_resource type="Texture2D" uid="uid://cfovrrtp1wb22" path="res://sprites/Dibujos_Escenarios/floor/pebble_brown3.png" id="1_q88qc"]
 [ext_resource type="Texture2D" uid="uid://6kp6clxrdrio" path="res://sprites/Dibujos_Escenarios/floor/lair3.png" id="2_l0d4j"]
