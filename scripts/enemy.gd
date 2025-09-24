@@ -22,11 +22,9 @@ func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta
 	
 	if perseguir and detecplayer != null:
-		# Solo modificamos X, dejamos Y igual
 		var dir = position.direction_to(detecplayer.position)
 		velocity.x = dir.x * speed
 	else:
-		# Cuando no persigue, queda quieto en X
 		velocity.x = 0
 
 	# Animaciones según movimiento
