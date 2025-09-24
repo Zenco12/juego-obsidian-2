@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://vyeimq0y7ydp"]
+
+[ext_resource type="PackedScene" uid="uid://cugi0rdp0gokk" path="res://enemy.tscn" id="1_rcdd3"]
+[ext_resource type="Texture2D" uid="uid://cn4jm00vtn17a" path="res://sprites/Dibujos_Escenarios/floor/crystal_floor0.png" id="2_i5a71"]
+[ext_resource type="PackedScene" uid="uid://dssomw0vp1vag" path="res://player.tscn" id="3_i2p14"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tsr8"]
+size = Vector2(31.3914, 25.6444)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_rcdd3")]
+position = Vector2(216, -128)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CrystalFloor0" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(20.3866, 4.50248)
+texture = ExtResource("2_i5a71")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -14.4317)
+scale = Vector2(20.3866, 4.50248)
+shape = SubResource("RectangleShape2D_2tsr8")
+
+[node name="Camera2D" type="Camera2D" parent="StaticBody2D"]
+
+[node name="player" parent="." instance=ExtResource("3_i2p14")]
+position = Vector2(-144, -96)
