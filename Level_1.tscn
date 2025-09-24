@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=4 uid="uid://ct73q1qvj3mna"]
+[gd_scene load_steps=41 format=4 uid="uid://ct73q1qvj3mna"]
 
 [ext_resource type="Texture2D" uid="uid://cfovrrtp1wb22" path="res://sprites/Dibujos_Escenarios/floor/pebble_brown3.png" id="1_gwx4l"]
 [ext_resource type="Texture2D" uid="uid://6kp6clxrdrio" path="res://sprites/Dibujos_Escenarios/floor/lair3.png" id="2_fkbji"]
@@ -25,9 +25,15 @@ texture = ExtResource("5_8xl1m")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fkbji"]
+texture = ExtResource("9_7hqok")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_fkbji"]
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_gwx4l")
+sources/1 = SubResource("TileSetAtlasSource_fkbji")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rab3n"]
 texture = ExtResource("1_gwx4l")
@@ -158,6 +164,7 @@ rendering_quadrant_size = 32
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("18_tlish")]
 position = Vector2(35, 543)
+velocidadSalto = 250
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("19_fkbji")]
 position = Vector2(543, 560)

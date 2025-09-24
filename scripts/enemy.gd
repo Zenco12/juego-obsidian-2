@@ -4,6 +4,7 @@ var speed = 100
 var gravity = 2000
 var detecplayer = null
 var perseguir = false
+@onready var sprite = $AnimatedSprite2D
 
 func _ready() -> void:
 	detecplayer = get_tree().get_first_node_in_group("player")
@@ -27,6 +28,13 @@ func _physics_process(delta: float) -> void:
 	else:
 		# Cuando no persigue, queda quieto en X
 		velocity.x = 0
+
+	# Animaciones según movimiento
+	if velocity.x != 0:
+		sprite.play("Correr-Enemy")
+		sprite.flip_h = velocity.x < 0
+	else:
+		sprite.play("Estatico-Enemy")
 
 	# Mover usando move_and_slide
 	move_and_slide()
