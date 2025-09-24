@@ -1,8 +1,7 @@
-<<<<<<< Updated upstream
+Camera2D
+Node2D
+CollisionShape2D
 StaticBody2D
 Area2D
-CollisionShape2D
 CharacterBody2D
-=======
-CollisionShape2D
->>>>>>> Stashed changes
+TileMapLayer
