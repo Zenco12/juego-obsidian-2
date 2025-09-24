@@ -2,3 +2,4 @@ res://Level_1.tscn
 res://player.tscn
 res://enemy.tscn
 res://prueba.tscn
+res://scripts/player.gd

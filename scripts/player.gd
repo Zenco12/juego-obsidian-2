@@ -31,7 +31,7 @@ func _physics_process(delta):
 		velocity.y += gravedadCaida * delta
 
 	# Bajar de plataforma One Way
-	if Input.is_action_pressed("bajar") and is_on_floor():
+	if Input.is_action_pressed("abajo") and is_on_floor():
 		# Para bajar de una plataforma One Way, le damos una velocidad hacia abajo
 		velocity.y = 300  # ajusta este valor según necesites
 
