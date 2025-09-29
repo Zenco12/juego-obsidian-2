@@ -6,6 +6,8 @@ extends CharacterBody2D
 @export var gravedadSubida = 500
 @export var gravedadCaida = 1200
 
+signal damageemit()
+
 @onready var sprite = $AnimatedSprite2D
 
 func _physics_process(delta):
@@ -37,3 +39,6 @@ func _physics_process(delta):
 
 	# Mover al personaje
 	move_and_slide()
+
+func damage():
+	damageemit.emit()

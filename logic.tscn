@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddno76iug5pc6"]
+
+[ext_resource type="Script" uid="uid://87xmpf5k1mqx" path="res://scripts/logic.gd" id="1_cpend"]
+
+[node name="logic" type="Node2D"]
+script = ExtResource("1_cpend")

@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://lr7aetekfbri" path="res://sprites/Personajes/ds.png" id="3_i3pqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(32, 48)
+size = Vector2(27, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jxqw"]
 atlas = ExtResource("3_i3pqv")
@@ -101,7 +101,7 @@ scale = Vector2(0.59375, 0.933594)
 texture = ExtResource("2_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(8, 0)
+position = Vector2(5.5, 0)
 shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="."]

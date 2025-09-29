@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://ct73q1qvj3mna"]
+[gd_scene load_steps=44 format=4 uid="uid://ct73q1qvj3mna"]
 
 [ext_resource type="Texture2D" uid="uid://cfovrrtp1wb22" path="res://sprites/Dibujos_Escenarios/floor/pebble_brown3.png" id="1_gwx4l"]
 [ext_resource type="Texture2D" uid="uid://6kp6clxrdrio" path="res://sprites/Dibujos_Escenarios/floor/lair3.png" id="2_fkbji"]
@@ -19,6 +19,9 @@
 [ext_resource type="Texture2D" uid="uid://bvepr86oc4gh2" path="res://sprites/Dibujos_Escenarios/floor/pedestal_ne.png" id="17_ojddo"]
 [ext_resource type="PackedScene" uid="uid://dssomw0vp1vag" path="res://player.tscn" id="18_tlish"]
 [ext_resource type="PackedScene" uid="uid://cugi0rdp0gokk" path="res://enemy.tscn" id="19_fkbji"]
+[ext_resource type="PackedScene" uid="uid://ddno76iug5pc6" path="res://logic.tscn" id="20_8xl1m"]
+[ext_resource type="Texture2D" uid="uid://kpwxffajc26y" path="res://sprites/health bar 2/health bar.png" id="22_nvhjt"]
+[ext_resource type="Texture2D" uid="uid://bkmmi6siqtnox" path="res://sprites/health bar 2/health bar full.png" id="23_bwsuy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gwx4l"]
 texture = ExtResource("5_8xl1m")
@@ -163,8 +166,29 @@ tile_set = SubResource("TileSet_oojyv")
 rendering_quadrant_size = 32
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("18_tlish")]
-position = Vector2(35, 543)
+position = Vector2(29, 551)
 velocidadSalto = 250
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("19_fkbji")]
-position = Vector2(543, 560)
+position = Vector2(540, 557)
+
+[node name="logic" parent="." instance=ExtResource("20_8xl1m")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="logic"]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="logic/CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 26.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+max_value = 5.0
+texture_under = ExtResource("22_nvhjt")
+texture_progress = ExtResource("23_bwsuy")
+
+[connection signal="damageemit" from="CharacterBody2D" to="logic" method="_on_character_body_2d_damageemit"]

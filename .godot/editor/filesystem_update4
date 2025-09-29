@@ -2,4 +2,7 @@ res://Level_1.tscn
 res://player.tscn
 res://enemy.tscn
 res://prueba.tscn
+res://scripts/enemy.gd
 res://scripts/player.gd
+res://logic.gd
+res://scripts/logic.gd

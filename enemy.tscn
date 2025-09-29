@@ -1,11 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://cugi0rdp0gokk"]
+[gd_scene load_steps=18 format=3 uid="uid://cugi0rdp0gokk"]
 
 [ext_resource type="Texture2D" uid="uid://cfm5j7fqaut2g" path="res://sprites/Personajes/Idle-Sheet.png" id="2_iifgy"]
 [ext_resource type="Script" uid="uid://gx0agjsj8wb3" path="res://scripts/enemy.gd" id="2_qi2p4"]
 [ext_resource type="Texture2D" uid="uid://d0vuqvss5glve" path="res://sprites/Personajes/Run-Sheet.png" id="3_epg4t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iifgy"]
-size = Vector2(96.1612, 112.29)
+size = Vector2(96.1612, 127.83)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4gyqm"]
 size = Vector2(374, 16)
@@ -93,18 +93,16 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qi2p4"]
+size = Vector2(40.7465, 41)
+
 [node name="Enemy" type="CharacterBody2D"]
 scale = Vector2(0.99395, 1)
 script = ExtResource("2_qi2p4")
 
-[node name="Icon" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(-4.76837e-07, -4)
-scale = Vector2(0.503043, 0.75)
-texture = ExtResource("2_iifgy")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-4.7974e-07, -5.2027)
+visible = false
+position = Vector2(0, 1.001)
 scale = Vector2(0.3348, 0.3348)
 shape = SubResource("RectangleShape2D_iifgy")
 
@@ -114,12 +112,18 @@ shape = SubResource("RectangleShape2D_iifgy")
 shape = SubResource("RectangleShape2D_4gyqm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3.38813e-21, -8)
 scale = Vector2(1.38337, 1.375)
 sprite_frames = SubResource("SpriteFrames_nnovl")
 animation = &"Correr-Enemy"
 frame = 3
 frame_progress = 0.592407
 
+[node name="AreaAttack" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaAttack"]
+position = Vector2(0.754564, 1.5)
+shape = SubResource("RectangleShape2D_qi2p4")
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="AreaAttack" to="." method="_on_area_attack_body_entered"]

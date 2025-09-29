@@ -1,3 +1,4 @@
+class_name enemy
 extends CharacterBody2D
 
 var speed = 100
@@ -8,11 +9,11 @@ var perseguir = false
 
 func _ready() -> void:
 	detecplayer = get_tree().get_first_node_in_group("player")
-
+#player entra en zona
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body == detecplayer:
 		perseguir = true
-
+#player sale de zona
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body == detecplayer:
 		perseguir = false
@@ -21,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	# Aplicar gravedad siempre
 	velocity.y += gravity * delta
 	
+	#detectar posicion del enemigo
 	if perseguir and detecplayer != null:
 		var dir = position.direction_to(detecplayer.position)
 		velocity.x = dir.x * speed
@@ -36,3 +38,10 @@ func _physics_process(delta: float) -> void:
 
 	# Mover usando move_and_slide
 	move_and_slide()
+
+#ataque
+func _on_area_attack_body_entered(body: Node2D) -> void:
+	
+	if body is player:
+		if body.has_method("damage"):
+			body.damage()
