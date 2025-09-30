@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://bvepr86oc4gh2" path="res://sprites/Dibujos_Escenarios/floor/pedestal_ne.png" id="17_ojddo"]
 [ext_resource type="PackedScene" uid="uid://dssomw0vp1vag" path="res://player.tscn" id="18_tlish"]
 [ext_resource type="PackedScene" uid="uid://cugi0rdp0gokk" path="res://enemy.tscn" id="19_fkbji"]
-[ext_resource type="PackedScene" uid="uid://ddno76iug5pc6" path="res://logic.tscn" id="20_8xl1m"]
+[ext_resource type="PackedScene" path="res://logic.tscn" id="20_8xl1m"]
 [ext_resource type="Texture2D" uid="uid://kpwxffajc26y" path="res://sprites/health bar 2/health bar.png" id="22_nvhjt"]
 [ext_resource type="Texture2D" uid="uid://bkmmi6siqtnox" path="res://sprites/health bar 2/health bar full.png" id="23_bwsuy"]
 
@@ -128,6 +128,7 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dxu6u"]
 texture = ExtResource("17_ojddo")
 texture_region_size = Vector2i(32, 32)
+use_texture_padding = false
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_oojyv"]
