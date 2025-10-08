@@ -27,4 +27,3 @@ shape = SubResource("RectangleShape2D_2tsr8")
 
 [node name="player" parent="." instance=ExtResource("3_i2p14")]
 position = Vector2(-144, -96)
-velocidadSalto = 250

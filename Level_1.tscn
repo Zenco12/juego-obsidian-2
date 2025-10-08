@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://bvepr86oc4gh2" path="res://sprites/Dibujos_Escenarios/floor/pedestal_ne.png" id="17_ojddo"]
 [ext_resource type="PackedScene" uid="uid://dssomw0vp1vag" path="res://player.tscn" id="18_tlish"]
 [ext_resource type="PackedScene" uid="uid://cugi0rdp0gokk" path="res://enemy.tscn" id="19_fkbji"]
-[ext_resource type="PackedScene" path="res://logic.tscn" id="20_8xl1m"]
+[ext_resource type="PackedScene" uid="uid://ddno76iug5pc6" path="res://logic.tscn" id="20_8xl1m"]
 [ext_resource type="Texture2D" uid="uid://kpwxffajc26y" path="res://sprites/health bar 2/health bar.png" id="22_nvhjt"]
 [ext_resource type="Texture2D" uid="uid://bkmmi6siqtnox" path="res://sprites/health bar 2/health bar full.png" id="23_bwsuy"]
 
@@ -168,7 +168,6 @@ rendering_quadrant_size = 32
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("18_tlish")]
 position = Vector2(29, 551)
-velocidadSalto = 250
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("19_fkbji")]
 position = Vector2(540, 557)
@@ -191,5 +190,3 @@ size_flags_vertical = 4
 max_value = 5.0
 texture_under = ExtResource("22_nvhjt")
 texture_progress = ExtResource("23_bwsuy")
-
-[connection signal="damageemit" from="CharacterBody2D" to="logic" method="_on_character_body_2d_damageemit"]

@@ -1,3 +1,4 @@
+Node
 CanvasLayer
 SubViewport
 TextureProgressBar
@@ -11,4 +12,3 @@ Label
 Camera2D
 StaticBody2D
 CharacterBody2D
-TileMapLayer

@@ -1,6 +1,9 @@
-res://Level_1.tscn
 res://player.tscn
+res://player.gd
+res://state machine/player_states/player_state_running.gd
+res://state machine/player_states/player_state_jumping.gd
+res://state machine/player_states/player_state_falling.gd
+res://state machine/player_states/player_state_idle.gd
+res://Level_1.tscn
 res://enemy.tscn
 res://prueba.tscn
-res://scripts/enemy.gd
-res://scripts/player.gd

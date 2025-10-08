@@ -42,6 +42,6 @@ func _physics_process(delta: float) -> void:
 #ataque
 func _on_area_attack_body_entered(body: Node2D) -> void:
 	
-	if body is player:
+	if body is Player:
 		if body.has_method("damage"):
 			body.damage()
